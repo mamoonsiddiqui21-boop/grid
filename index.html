@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<STyle>
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.container{
+height: 100vh;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: auto auto auto auto;
+}
+
+.div {
+text-align: center;
+background-color: blue;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.HEADER{
+background-color: black;
+color: white;
+grid-column: span 1;
+grid-row: span 1;
+}
+
+.MENU{
+background-color: #ff2600;
+color: white;
+grid-column: span 3;
+}
+
+.HERO{
+background-color: #0178f8;
+color: white;
+grid-column: span 4;
+}
+
+.MAIN{
+background-color: #142541;
+color: white;
+grid-column: span 2;
+grid-row: span 2;
+}
+
+.IMAGE{
+background-color: #57918f;
+color: white;
+grid-column: 4 / 5;
+}
+
+.EXTRA{
+background-color: #00ffb7;
+color: white;
+grid-column: 4 / 5;
+}
+
+.BANNER{
+background-color: #ffb300;
+color: white;
+grid-column: span 4;
+}
+
+
+
+@media (min-with:400px){
+    grid-template-rows: 
+    100px;
+}
+
+
+
+
+
+
+
+
+</STyle>
+</head>
+<body>
+<div class="container">
+<div class="div HEADER">HEADER</div>
+<div class="div MENU">MENU</div>
+<div class="div HERO">HERO</div>
+<div class="div MAIN">MAIN</div>
+<div class="div IMAGE">IMAGE</div>
+<div class="div EXTRA">EXTRA</div>
+<div class="div BANNER">BANNER</div>
+</div>
+
+</body>
+</html>
